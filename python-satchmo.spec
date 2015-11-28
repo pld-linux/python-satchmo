@@ -28,12 +28,12 @@ Satchmot to sklep internetowy oparty na szkielecie Django.
 %setup -q -n %{module}-%{version}
 
 %build
-python ./setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python ./setup.py install \
+%py_install \
 	--optimize 2 \
 	--root=$RPM_BUILD_ROOT
 
