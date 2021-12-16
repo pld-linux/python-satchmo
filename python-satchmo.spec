@@ -10,9 +10,9 @@ Group:		Development/Languages/Python
 Source0:	http://satchmoproject.com/snapshots/%{module}-%{version}.tar.gz
 # Source0-md5:	3e7f13edfc717d88f754f475182072d6
 URL:		http://www.satchmoproject.com/
-BuildRequires:	rpmbuild(macros) >= 1.710
+BuildRequires:	rpmbuild(macros) >= 1.714
 BuildRequires:	python-devel
-BuildRequires:	python-setuptools >= 0.6-0.c1
+BuildRequires:	python-setuptools >= 1:0.6-0.c1
 BuildRequires:	rpm-pythonprov
 Requires:	python-django = 0.96
 %pyrequires_eq	python
