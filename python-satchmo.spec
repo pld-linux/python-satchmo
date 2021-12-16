@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Satchmo is a web shop based on Django framework.
 
 %description -l pl.UTF-8
-Satchmot to sklep internetowy oparty na szkielecie Django.
+Satchmo to sklep internetowy oparty na szkielecie Django.
 
 %prep
 %setup -q -n %{module}-%{version}
@@ -34,9 +34,7 @@ Satchmot to sklep internetowy oparty na szkielecie Django.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%py_install \
-	--optimize 2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 find $RPM_BUILD_ROOT -type f -name '*.pyc' -exec rm "{}" ";"
 find $RPM_BUILD_ROOT -type f -name '*.pyo' -exec rm "{}" ";"
